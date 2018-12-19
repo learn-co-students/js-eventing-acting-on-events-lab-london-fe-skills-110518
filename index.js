@@ -8,6 +8,9 @@ document.addEventListener('keydown', function(e) {
       if (e.which === 39) { 
         moveDodgerRight()
       }
+      if (e.which === 38){
+        moveDodgerTop()
+      }
   }
 )
 
@@ -36,3 +39,4 @@ dodger.style.left.replace('px', '')
       dodger.style.left = `${left + 1}px`
     }
 }
+
